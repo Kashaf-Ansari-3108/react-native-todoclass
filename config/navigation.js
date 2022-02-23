@@ -7,6 +7,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Todo from '../screen/todo';
 import Login from '../screen/login';
 import Products from '../screen/products';
+import ProductPage from '../screen/productPage';
+import Signup from '../screen/signup';
 
 function HomeScreen() {
   return (
@@ -32,6 +34,8 @@ function AppNavigation() {
         <Stack.Screen  options={{ title: 'Overview',headerShown:false }} name="Login" component={Login} />
         <Stack.Screen name="Home" component={Todo} />
         <Stack.Screen name="Products" component={Products} />
+        <Stack.Screen name="ProductPage" component={ProductPage} />
+        <Stack.Screen name="SignUp" component={Signup} />
       </Stack.Navigator>
     </NavigationContainer>
   );

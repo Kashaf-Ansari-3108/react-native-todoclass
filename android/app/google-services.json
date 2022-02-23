@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "530162048913",
+    "project_id": "classtodoapp-210a1",
+    "storage_bucket": "classtodoapp-210a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:530162048913:android:e7ff6984412a8a41d88430",
+        "android_client_info": {
+          "package_name": "com.classtodo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "530162048913-4dt3vst86ba9ck9nombdcrakrgrbb0qi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiuLhtVHEbXPr2p7KUpIMbl9JqHf9LASE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "530162048913-4dt3vst86ba9ck9nombdcrakrgrbb0qi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
