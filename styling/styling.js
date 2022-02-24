@@ -4,13 +4,15 @@ const styling = {
     },
     input: {
         width: '80%',
+        height:40,
         backgroundColor: 'white',
         color: 'black',
         fontSize: 20,
         borderWidth: 2,
         borderColor: 'blue',
         borderRadius: 8,
-        marginHorizontal: 'auto'
+        marginHorizontal: 'auto',
+        
     },
     header: {
         flexDirection: 'row',

@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
-import { View, Text, Image, TextInput, TouchableOpacity, StyleSheet } from 'react-native'
+import { View, Text, Image, TextInput, TouchableOpacity, StyleSheet, Alert, ToastAndroid } from 'react-native'
 import styling from '../styling/styling'
 import { Icon } from 'react-native-elements';
+import auth from '@react-native-firebase/auth';
+
 
 
 const styles = StyleSheet.create(styling)
@@ -12,10 +14,29 @@ function Login({navigation}) {
     const [password,setPassword] = useState('')
 
     const loginUser = ()=>{
+       
         let obj = {
             email,password
         }
-        navigation.navigate('Products',obj)
+
+        if(!obj.email){
+            Alert.alert('Authentication Error','Enter Email',[{label:'Okay'}])
+            return
+        }
+        if(!obj.password && password.length<6){
+            Alert.alert('Authentication Error','Enter Password and password should be more that 6 characters',[{label:'Okay'}])
+            return
+        }
+
+        auth().signInWithEmailAndPassword(obj.email,obj.password).then((scces)=>{
+            ToastAndroid.show("User login Successfully ", ToastAndroid.SHORT);
+            navigation.navigate('Products',obj)
+            console.log(scces)
+        }).catch((err)=>{
+            Alert.alert('Authentication Error',err.messag,[{label:'Okay'}])
+            console.log(err)
+        })
+        
     } 
 
     return <>

@@ -9,6 +9,8 @@ import Login from '../screen/login';
 import Products from '../screen/products';
 import ProductPage from '../screen/productPage';
 import Signup from '../screen/signup';
+import MainScreen from '../screen/mainscreen';
+import AddQuestion from '../screen/addquestion';
 
 function HomeScreen() {
   return (
@@ -31,11 +33,13 @@ function AppNavigation() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+        <Stack.Screen  options={{ title: 'Overview',headerShown:false }} name="Main" component={MainScreen} />
         <Stack.Screen  options={{ title: 'Overview',headerShown:false }} name="Login" component={Login} />
         <Stack.Screen name="Home" component={Todo} />
         <Stack.Screen name="Products" component={Products} />
         <Stack.Screen name="ProductPage" component={ProductPage} />
         <Stack.Screen name="SignUp" component={Signup} />
+        <Stack.Screen name="AddQuestion" component={AddQuestion} />
       </Stack.Navigator>
     </NavigationContainer>
   );

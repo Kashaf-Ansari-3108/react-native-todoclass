@@ -44,7 +44,7 @@ function Todo({navigation,route}) {
                 <Text style={styles.heading}>Todo</Text>
             </View>
             <View>
-                <Text>welcome {route.params.email}</Text>
+                {/* <Text>welcome {route.params.email}</Text> */}
             </View>
             <View style={styles.flexCenter}>
                 <TextInput value={text} onChangeText={(e) => setText(e)} style={styles.input} placeholder='Enter Todo ...' />
