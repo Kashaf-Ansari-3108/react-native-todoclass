@@ -11,6 +11,8 @@ import ProductPage from '../screen/productPage';
 import Signup from '../screen/signup';
 import MainScreen from '../screen/mainscreen';
 import AddQuestion from '../screen/addquestion';
+import CustomMap from '../screen/map';
+import ImagePicker from '../screen/imagePicker';
 
 function HomeScreen() {
   return (
@@ -40,6 +42,8 @@ function AppNavigation() {
         <Stack.Screen name="ProductPage" component={ProductPage} />
         <Stack.Screen name="SignUp" component={Signup} />
         <Stack.Screen name="AddQuestion" component={AddQuestion} />
+        <Stack.Screen name="Map" component={CustomMap} />
+        <Stack.Screen name="ImagePicker" component={ImagePicker} />
       </Stack.Navigator>
     </NavigationContainer>
   );

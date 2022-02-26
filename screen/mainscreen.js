@@ -17,6 +17,12 @@ function MainScreen({ navigation }) {
             <TouchableOpacity onPress={() => navigation.navigate('AddQuestion')}>
                 <Text style={{fontSize:25,padding:10,backgroundColor:'lightgrey',marginVertical:10}}>Add Question</Text>
             </TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('Map')}>
+                <Text style={{fontSize:25,padding:10,backgroundColor:'lightgrey',marginVertical:10}}>Custom Map</Text>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('ImagePicker')}>
+                <Text style={{fontSize:25,padding:10,backgroundColor:'lightgrey',marginVertical:10}}>Image Picker</Text>
+            </TouchableOpacity>
         </View>
     </>
 }
